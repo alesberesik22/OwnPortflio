@@ -34,10 +34,14 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  background: black;
   color: var(--color-white);
-  line-height: 1.7;
-  background-image: url(../src/assets/images/background.jpg);
+  line-height: 1.7rem;
+  background-image: url(../src/assets/images/background2.jpg);
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 .container {
