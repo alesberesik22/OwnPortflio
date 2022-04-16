@@ -20,7 +20,7 @@ const App = () => {
       <Testimonial />
       <Projects />
       <Contacts />
-      <Footer />ß
+      <Footer />
     </div>
   );
 };
