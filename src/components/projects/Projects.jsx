@@ -1,6 +1,7 @@
 import React from "react";
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
 import Portfolio from "../../assets/images/Portfolio.PNG";
+import PhotoPortfolio from "../../assets/images/photo-portfolio.png";
 
 import "./Projects.css";
 
@@ -16,6 +17,13 @@ const data = [
     id: 2,
     image: Portfolio,
     title: "My Portfolio",
+    github: "https://github.com",
+    demo: "https://github.com",
+  },
+  {
+    id: 3,
+    image: PhotoPortfolio,
+    title: "Portfolio for a photograph",
     github: "https://github.com",
     demo: "https://github.com",
   },
