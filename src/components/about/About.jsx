@@ -3,8 +3,38 @@ import AboutMe from "../../assets/images/about_me.JPG";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { motion, Variants } from "framer-motion";
 
 import "./About.css";
+
+const cardVariants = {
+  offscreen: {
+    x: -300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    rotate: 10,
+    transition: { duration: 1, delay: 0.5 },
+  },
+};
+
+const textVariants = {
+  offscreen: {
+    x: 300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bound: 0.2,
+      duration: 1,
+    },
+  },
+};
 
 const About = () => {
   return (
@@ -14,11 +44,23 @@ const About = () => {
 
       <div className="container about_container">
         <div className="about_me">
-          <div className="about_me-image">
+          <motion.div
+            className="about_me-image"
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.8 }}
+            variants={cardVariants}
+          >
             <img src={AboutMe} alt="about me" />
-          </div>
+          </motion.div>
         </div>
-        <div className="about_content">
+        <motion.div
+          className="about_content"
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.8 }}
+          variants={textVariants}
+        >
           <div className="about_cards">
             <article className="about_card">
               <FaAward className="about_icon" />
@@ -43,7 +85,7 @@ const About = () => {
           <a href="#contacts" className="btn btn-primary">
             Contact me
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

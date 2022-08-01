@@ -73,6 +73,13 @@ const Experiences = () => {
                 <small className="text-light">Beginner</small>
               </div>
             </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icon" />
+              <div>
+                <h4>MongoDB</h4>
+                <small className="text-light">Beginner</small>
+              </div>
+            </article>
           </div>
         </div>
         <div className="experience_other">
