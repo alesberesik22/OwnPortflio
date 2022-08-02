@@ -16,7 +16,7 @@ const cardVariants = {
     x: 0,
     opacity: 1,
     rotate: 10,
-    transition: { duration: 1, delay: 0.5 },
+    transition: { duration: 1, delay: 0.2 },
   },
 };
 

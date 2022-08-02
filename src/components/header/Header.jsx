@@ -1,6 +1,7 @@
 import React from "react";
 import { CTA } from "./CTA";
 import ME from "../../assets/images/me.png";
+import arrow from "../../assets/images/arrow.png";
 import HeaderSocials from "./HeaderSocials";
 
 import "./Header.css";
@@ -57,6 +58,20 @@ const Header = () => {
           </div>
           <CTA />
           <HeaderSocials />
+        </div>
+        <div className="glitch">
+          <img
+            style={{
+              marginTop: "-3rem",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "14rem",
+              transform: "rotate(180deg)",
+            }}
+            src={arrow}
+            alt="arrow"
+          />
         </div>
         <a href="#contact" className="scroll_down">
           Scroll down

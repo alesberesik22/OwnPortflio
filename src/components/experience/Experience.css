@@ -1,13 +1,19 @@
 .experience_container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 2rem; */
+  max-height: 50vh;
+  overflow: scroll;
 }
 .experience_container > div {
   background: var(--color-bg-variant);
+  margin: auto;
+  margin-bottom: 5rem;
+  max-width: 40rem;
+  min-height: 30vh;
   padding: 2, 4rem 5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
   border-radius: 2rem;
   border: 1px transparent;
   transition: var(--transition);
