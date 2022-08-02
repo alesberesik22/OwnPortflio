@@ -28,6 +28,13 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.projects_text h5, h2 {
+  color: var(--color-light)
+}
+.projects_text h2 {
+  color: var(--color-primary);
+    margin-bottom: 3rem;
+}
 /* ======================================= TABLETS ======================================= */
 @media screen and (max-width: 1024px) {
   .project_container {
