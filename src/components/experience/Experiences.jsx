@@ -1,7 +1,23 @@
 import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-import "./Experience.css";
+import { motion, Variants } from "framer-motion";
+
+const textVariants = {
+  offscreen: {
+    x: 300,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bound: 0.2,
+      duration: 1,
+    },
+  },
+};
 
 const Experiences = () => {
   return (
@@ -9,7 +25,13 @@ const Experiences = () => {
       <h5>What skills I have</h5>
       <h2>My Experiences</h2>
       <div className="experience experience_container">
-        <div className="experience_frontend">
+        <motion.div
+          className="experience_frontend"
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.8 }}
+          variants={textVariants}
+        >
           <h3>Frontend Development</h3>
           <div className="experience_content">
             <article className="experience_details">
@@ -41,8 +63,14 @@ const Experiences = () => {
               </div>
             </article>
           </div>
-        </div>
-        <div className="experience_backend">
+        </motion.div>
+        <motion.div
+          className="experience_backend"
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.8 }}
+          variants={textVariants}
+        >
           <h3>Backend Development</h3>
           <div className="experience_content">
             <article className="experience_details">
@@ -73,9 +101,22 @@ const Experiences = () => {
                 <small className="text-light">Beginner</small>
               </div>
             </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icon" />
+              <div>
+                <h4>MongoDB</h4>
+                <small className="text-light">Beginner</small>
+              </div>
+            </article>
           </div>
-        </div>
-        <div className="experience_other">
+        </motion.div>
+        <motion.div
+          className="experience_other"
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.8 }}
+          variants={textVariants}
+        >
           <h3>Other skills</h3>
           <div className="experience_content">
             <article className="experience_details">
@@ -114,7 +155,7 @@ const Experiences = () => {
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
