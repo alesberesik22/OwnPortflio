@@ -1,4 +1,6 @@
 import React from "react";
+import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
 import Portfolio from "../../assets/images/Portfolio.PNG";
 import PhotoPortfolio from "../../assets/images/photo-portfolio.png";
@@ -32,8 +34,14 @@ const data = [
 const Projects = () => {
   return (
     <section id="projects">
-      <h5>Projects</h5>
-      <h2>I have made</h2>
+      <ParallaxProvider>
+        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
+          <div className="projects_text">
+            <h5>Projects</h5>
+            <h2>I have made</h2>
+          </div>
+        </Parallax>
+      </ParallaxProvider>
       <div className="container project_container">
         {data.map(({ id, image, title, github, demo }) => {
           return (

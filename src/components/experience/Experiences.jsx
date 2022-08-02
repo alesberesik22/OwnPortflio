@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { motion, Variants } from "framer-motion";
+import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 const textVariants = {
   offscreen: {
@@ -22,8 +23,14 @@ const textVariants = {
 const Experiences = () => {
   return (
     <section id="experiences">
-      <h5>What skills I have</h5>
-      <h2>My Experiences</h2>
+      <ParallaxProvider>
+        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
+          <div className="experiences_text">
+            <h5>What skills I have</h5>
+            <h2>My Experiences</h2>
+          </div>
+        </Parallax>
+      </ParallaxProvider>
       <div className="experience experience_container">
         <motion.div
           className="experience_frontend"

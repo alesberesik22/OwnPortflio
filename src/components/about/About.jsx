@@ -4,6 +4,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import { motion, Variants } from "framer-motion";
+import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 import "./About.css";
 
@@ -16,7 +17,7 @@ const cardVariants = {
     x: 0,
     opacity: 1,
     rotate: 10,
-    transition: { duration: 1, delay: 0.2 },
+    transition: { duration: 1, delay: 0 },
   },
 };
 
@@ -39,9 +40,14 @@ const textVariants = {
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About me</h2>
-
+      <ParallaxProvider>
+        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
+          <div className="about_text">
+            <h5>Get To Know</h5>
+            <h2>About me</h2>
+          </div>
+        </Parallax>
+      </ParallaxProvider>
       <div className="container about_container">
         <div className="about_me">
           <motion.div
