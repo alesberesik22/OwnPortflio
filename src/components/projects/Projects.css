@@ -1,14 +1,19 @@
 .project_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  max-height: 65vh;
+  overflow: scroll;
 }
 .project_item {
+  display: inline-block;
+  float: right;
+  position: relative;
+  float: right;
+  width: 30rem;
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  margin-bottom: 2rem;
 }
 .project_item:hover {
   border-color: var(--color-primary-variant);
@@ -34,6 +39,22 @@
 .projects_text h2 {
   color: var(--color-primary);
     margin-bottom: 3rem;
+}
+.projects {
+  width: 59.9rem;
+  display: inline-block;
+  right: 0;
+}
+.project_images {
+  display: inline-block;
+  float: left;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 30rem;
+}
+.project_images > img {
+  width: 100%;
 }
 /* ======================================= TABLETS ======================================= */
 @media screen and (max-width: 1024px) {
