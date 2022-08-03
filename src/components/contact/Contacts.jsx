@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 import emailjs from "emailjs-com";
 
 import { MdOutlineEmail } from "react-icons/md";
@@ -32,8 +33,19 @@ const Contacts = () => {
   };
   return (
     <section id="contacts">
-      <h5>Get In Touch</h5>
-      <h2>Contact me</h2>
+      <ParallaxProvider>
+        <Parallax
+          easing={"easeOutQuad"}
+          translateY={[200, 60]}
+          speed={-20}
+          opacity={[-0.5, 1]}
+        >
+          <div className="contacts_text" style={{ textAlign: "center" }}>
+            <h5>Get In Touch</h5>
+            <h2>Contact me</h2>
+          </div>
+        </Parallax>
+      </ParallaxProvider>
       <div className="container contact_container">
         <div className="contact_options">
           <article className="contact_option">

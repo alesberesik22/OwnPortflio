@@ -24,8 +24,13 @@ const Experiences = () => {
   return (
     <section id="experiences">
       <ParallaxProvider>
-        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
-          <div className="experiences_text">
+        <Parallax
+          easing={"easeOutQuad"}
+          translateY={[200, 60]}
+          speed={-20}
+          opacity={[-0.5, 1]}
+        >
+          <div className="experiences_text" style={{ textAlign: "center" }}>
             <h5>What skills I have</h5>
             <h2>My Experiences</h2>
           </div>

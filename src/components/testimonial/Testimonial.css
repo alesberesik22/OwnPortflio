@@ -45,6 +45,13 @@
 .job_list p {
   font-size: 0.9rem;
 }
+.testimonial_text h5,h2 {
+  color: var(--color-light);
+}
+.testimonial_text h2 {
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+}
 /* ======================================= TABLETS ======================================= */
 @media screen and (max-width: 1024px) {
   .jobs_container {

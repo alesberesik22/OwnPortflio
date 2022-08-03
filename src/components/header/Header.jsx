@@ -29,7 +29,7 @@ const Header = () => {
             </span>{" "}
             <span className="hand">🤚</span>
           </h1>
-          <h2>I'm a Software Engineer.</h2>
+          <h2>I'm a Software Developer.</h2>
           <div className="header_info_bullets">
             <h3 className="header_bullet_point">
               🎶
@@ -69,6 +69,7 @@ const Header = () => {
               width: "14rem",
               transform: "rotate(180deg)",
             }}
+            className="img_arrow"
             src={arrow}
             alt="arrow"
           />

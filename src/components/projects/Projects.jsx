@@ -35,8 +35,13 @@ const Projects = () => {
   return (
     <section id="projects">
       <ParallaxProvider>
-        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
-          <div className="projects_text">
+        <Parallax
+          easing={"easeOutQuad"}
+          translateY={[200, 60]}
+          speed={-20}
+          opacity={[-0.5, 1]}
+        >
+          <div className="projects_text" style={{ textAlign: "center" }}>
             <h5>Projects</h5>
             <h2>I have made</h2>
           </div>

@@ -127,6 +127,20 @@ header {
     header {
         height: 68vh;
     }
+    .me {
+        width: 20rem;
+        height: 25rem;
+        display: inline-block;
+    }
+    .header_info {
+        margin-top: 2rem;
+    }
+    .glitch > img {
+        width: 5rem;
+    }
+    .header_socials {
+        font-size: 30px;
+    }
 }
 
 /* ======================================= PHONES ======================================= */
