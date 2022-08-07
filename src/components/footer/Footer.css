@@ -15,8 +15,8 @@ footer a:hover {
   color: var(--color-primary);
 }
 .footer_logo {
-  font-size: 2rem;
-  width: 7%;
+  font-size: 16rem;
+  width: 25%;
   margin-bottom: 1rem;
   display: inline-block;
 }

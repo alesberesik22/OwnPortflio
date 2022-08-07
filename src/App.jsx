@@ -4,7 +4,7 @@ import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
 import Experiences from "./components/experience/Experiences";
 import Contacts from "./components/contact/Contacts";
-import Footer from "./components/footer/Footer";
+import Footer2 from "./components/footer/Footer2";
 import Testimonial from "./components/testimonial/Testimonial";
 import Projects from "./components/projects/Projects";
 
@@ -20,7 +20,7 @@ const App = () => {
       <Testimonial />
       <Projects />
       <Contacts />
-      <Footer />
+      <Footer2 />
     </div>
   );
 };

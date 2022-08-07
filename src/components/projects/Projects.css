@@ -1,5 +1,5 @@
 .project_container {
-  max-height: 65vh;
+  max-height: 85vh;
   overflow: scroll;
 }
 .project_item {
@@ -13,7 +13,7 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .project_item:hover {
   border-color: var(--color-primary-variant);
@@ -41,20 +41,42 @@
     margin-bottom: 3rem;
 }
 .projects {
-  width: 59.9rem;
+  height: 125rem;
+  width: 30rem;
   display: inline-block;
+  float: right;
   right: 0;
 }
 .project_images {
+  position: relative;
+  margin-top: 2rem;
   display: inline-block;
   float: left;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 30rem;
+  width: 49rem;
+  /*  overflow: hidden; */
+  margin-bottom: 10rem  ;
 }
 .project_images > img {
-  width: 100%;
+  border-radius: 2rem;
+  position: sticky;
+  max-width: 100%;
+}
+.project_image {
+  transition: "transfrom 153ms ease-in-out";
+  animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 /* ======================================= TABLETS ======================================= */
 @media screen and (max-width: 1024px) {

@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { motion, Variants } from "framer-motion";
 
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
 import Portfolio from "../../assets/images/Portfolio.PNG";
 import PhotoPortfolio from "../../assets/images/photo-portfolio.png";
 
 import "./Projects.css";
+
+const cardVariants = {
+  offscreen: {
+    y: 300,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 50,
+    opacity: 1,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 const data = [
   {
@@ -32,6 +50,7 @@ const data = [
 ];
 
 const Projects = () => {
+  const [visibleImg, setvisibleImg] = useState(0);
   return (
     <section id="projects">
       <ParallaxProvider>
@@ -49,12 +68,58 @@ const Projects = () => {
       </ParallaxProvider>
       <div className="container project_container">
         <div className="project_images">
-          <img src={data[1].image} />
+          {visibleImg === 0 && (
+            <img
+              src={data[0].image}
+              className="project_image"
+              style={{
+                position: "absolute",
+                zIndex: 10,
+                top: 0,
+                left: 0,
+              }}
+            />
+          )}
+          {visibleImg === 1 && (
+            <img
+              src={data[1].image}
+              className="project_image"
+              style={{
+                position: "absolute",
+                zIndex: 10,
+                top: 0,
+                left: 0,
+              }}
+            />
+          )}
+          {visibleImg === 2 && (
+            <img
+              src={data[2].image}
+              className="project_image"
+              style={{
+                position: "absolute",
+                zIndex: 10,
+                top: 0,
+                left: 0,
+              }}
+            />
+          )}
         </div>
         <div className="projects">
           {data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key={id} className="project_item">
+              <motion.article
+                key={id}
+                id={id}
+                className="project_item"
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+                variants={cardVariants}
+                onViewportEnter={(change) => {
+                  setvisibleImg(change.target.id - 1);
+                }}
+              >
                 <div className="project_item-image">
                   <img src={image} alt={title} />
                 </div>
@@ -67,7 +132,7 @@ const Projects = () => {
                     Live Demo
                   </a>
                 </div>
-              </article>
+              </motion.article>
             );
           })}
         </div>
