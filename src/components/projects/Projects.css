@@ -1,14 +1,19 @@
 .project_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  max-height: 85vh;
+  overflow: scroll;
 }
 .project_item {
+  display: inline-block;
+  float: right;
+  position: relative;
+  float: right;
+  width: 30rem;
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  margin-bottom: 3rem;
 }
 .project_item:hover {
   border-color: var(--color-primary-variant);
@@ -35,11 +40,55 @@
   color: var(--color-primary);
     margin-bottom: 3rem;
 }
+.projects {
+  height: 125rem;
+  width: 30rem;
+  display: inline-block;
+  float: right;
+  right: 0;
+}
+.project_images {
+  position: relative;
+  margin-top: 2rem;
+  display: inline-block;
+  float: left;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 49rem;
+  /*  overflow: hidden; */
+  margin-bottom: 10rem  ;
+}
+.project_images > img {
+  border-radius: 2rem;
+  position: sticky;
+  max-width: 100%;
+}
+.project_image {
+  transition: "transfrom 153ms ease-in-out";
+  animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 /* ======================================= TABLETS ======================================= */
 @media screen and (max-width: 1024px) {
   .project_container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
+  }
+  .project_images {
+    visibility: hidden;
+  }
+  .projects {
+    margin-right: 7rem;
   }
 }
 
@@ -48,5 +97,16 @@
   .project_container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .project_images {
+    visibility: hidden;
+  } 
+
+  .project_container .projects {
+    margin: auto;
+  }
+  .project_container .projects .project_item {
+    width: 22rem;
   }
 }

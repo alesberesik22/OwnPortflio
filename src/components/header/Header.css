@@ -78,6 +78,10 @@ header {
     font-weight: 300;
     font-size: 0.9rem;
 }
+.img_arrow {
+    width: 14rem;
+    margin-top: -3rem;
+}
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }
@@ -127,6 +131,24 @@ header {
     header {
         height: 68vh;
     }
+    .me {
+        width: 20rem;
+        height: 25rem;
+        display: inline-block;
+    }
+    .header_info {
+        margin-top: 2rem;
+    }
+    .glitch > img {
+        width: 5rem;
+    }
+    .header_socials {
+        font-size: 30px;
+    }
+    .glitch .img_arrow {
+        margin-top: 2rem;
+        width: 10rem;
+    }
 }
 
 /* ======================================= PHONES ======================================= */
@@ -136,5 +158,11 @@ header {
     }
     .header_socials, .scroll_down {
         display: none;
+    }
+    .header_info {
+        margin-top: -2rem;
+    }
+    .glitch>img {
+        visibility: hidden;
     }
 }

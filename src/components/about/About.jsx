@@ -10,7 +10,7 @@ import "./About.css";
 
 const cardVariants = {
   offscreen: {
-    x: -300,
+    x: -80,
     opacity: 0,
   },
   onscreen: {
@@ -41,8 +41,13 @@ const About = () => {
   return (
     <section id="about">
       <ParallaxProvider>
-        <Parallax easing={"easeOutQuad"} translateX={[0, 45]}>
-          <div className="about_text">
+        <Parallax
+          easing={"easeOutQuad"}
+          translateY={[200, 60]}
+          speed={-20}
+          opacity={[-0.5, 1]}
+        >
+          <div className="about_text" style={{ textAlign: "center" }}>
             <h5>Get To Know</h5>
             <h2>About me</h2>
           </div>

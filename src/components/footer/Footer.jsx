@@ -4,6 +4,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../../assets/images/logo2.png";
 
+import {
+  MouseParallaxContainer,
+  MouseParallaxChild,
+} from "react-parallax-mouse";
+
 import "./Footer.css";
 
 const Footer = () => {

@@ -1,13 +1,25 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
+import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 import "./Testimonial.css";
 
 const Testimonial = () => {
   return (
     <section id="testimonial">
-      <h5>Jobs</h5>
-      <h2>What I have worked with</h2>
+      <ParallaxProvider>
+        <Parallax
+          easing={"easeOutQuad"}
+          translateY={[200, 60]}
+          speed={-20}
+          opacity={[-0.5, 1]}
+        >
+          <div className="testimonial_text" style={{ textAlign: "center" }}>
+            <h5>Jobs</h5>
+            <h2>What I have worked with</h2>
+          </div>
+        </Parallax>
+      </ParallaxProvider>
       <div className="container jobs_container">
         <article className="job">
           <div className="job_head">
