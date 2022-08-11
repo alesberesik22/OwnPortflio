@@ -65,6 +65,9 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .about_content {
+    
+  }
 }
 
 /* ======================================= PHONES ======================================= */

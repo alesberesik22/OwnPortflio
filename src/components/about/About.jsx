@@ -23,7 +23,7 @@ const cardVariants = {
 
 const textVariants = {
   offscreen: {
-    x: 300,
+    x: 80,
     opacity: 0,
   },
   onscreen: {
