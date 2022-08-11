@@ -10,7 +10,7 @@ import "./About.css";
 
 const cardVariants = {
   offscreen: {
-    x: -300,
+    x: -80,
     opacity: 0,
   },
   onscreen: {
