@@ -6,7 +6,7 @@ import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 const textVariants = {
   offscreen: {
-    x: 300,
+    x: 20,
     opacity: 0,
   },
   onscreen: {

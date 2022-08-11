@@ -84,6 +84,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
+  .project_images {
+    visibility: hidden;
+  }
+  .projects {
+    margin-right: 7rem;
+  }
 }
 
 /* ======================================= PHONES ======================================= */
@@ -91,5 +97,16 @@
   .project_container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .project_images {
+    visibility: hidden;
+  } 
+
+  .project_container .projects {
+    margin: auto;
+  }
+  .project_container .projects .project_item {
+    width: 25rem;
   }
 }

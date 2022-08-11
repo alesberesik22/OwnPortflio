@@ -15,12 +15,14 @@
   /* margin-left: 1.5rem;
   margin-right: 1.5rem; */
   border-radius: 2rem;
-  border: 1px transparent;
+  border: 1px solid rgba(36, 144, 215, 1);
   transition: var(--transition);
 }
 .experience_container > div:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  background: rgba(36, 144, 215, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
   cursor: default;
 }
 .experience_container > div h3 {
@@ -55,14 +57,22 @@
 @media screen and (max-width: 1024px) {
   .experience_container {
     grid-template-columns: 1fr;
+    width: 100%;
   }
   .experience_container > div {
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
+    margin-bottom: 2rem;
   }
   .experience_content {
-    margin-left: 8rem;
+    margin-left: 8rem;  
+  }
+  .experience_container .experience_frontend, .experience_container .experience_backend, .experience_container .experience_other {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    left: -5rem;
   }
 }
 
@@ -78,4 +88,11 @@
     width: 90%;
     padding: 2rem 1rem;
   }
+        .experience_container .experience_frontend,
+        .experience_container .experience_backend,
+        .experience_container .experience_other {
+          position: relative;
+          margin-bottom: 2rem;
+          margin-left: 6.5rem;
+        }
 }
