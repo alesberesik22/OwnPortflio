@@ -1,6 +1,6 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import "./Testimonial.css";
 
@@ -82,11 +82,28 @@ const Testimonial = () => {
         <article className="job">
           <div className="job_head">
             <h3>Ness</h3>
-            <h5>QA Engineer Internship/Full Time</h5>
+            <h5>QA Engineer Internship and Full Time</h5>
           </div>
           <ul className="job_list">
             <li>
-              <p>TBA</p>
+              <BiCheck className="job_list-icon" />
+              <p>Consultations with clients</p>
+            </li>
+            <li>
+              <BiCheck className="job_list-icon" />
+              <p>Jenkins</p>
+            </li>
+            <li>
+              <BiCheck className="job_list-icon" />
+              <p>Jira</p>
+            </li>
+            <li>
+              <BiCheck className="job_list-icon" />
+              <p>Confluence</p>
+            </li>
+            <li>
+              <BiCheck className="job_list-icon" />
+              <p>Relational Databases</p>
             </li>
           </ul>
         </article>

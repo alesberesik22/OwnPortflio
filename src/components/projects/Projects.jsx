@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
 import Portfolio from "../../assets/images/Portfolio.PNG";
@@ -30,21 +30,21 @@ const data = [
     id: 1,
     image: SmartHomeLogo,
     title: "Smart Home System",
-    github: "https://github.com",
+    github: "https://github.com/alesberesik22/diplomovka",
     demo: "https://github.com",
   },
   {
     id: 2,
     image: Portfolio,
     title: "My Portfolio",
-    github: "https://github.com",
+    github: "https://github.com/alesberesik22/OwnPortflio",
     demo: "https://github.com",
   },
   {
     id: 3,
     image: PhotoPortfolio,
     title: "Portfolio for a photograph",
-    github: "https://github.com",
+    github: "https://github.com/alesberesik22/photo-portfolio",
     demo: "https://github.com",
   },
 ];

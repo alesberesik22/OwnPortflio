@@ -3,8 +3,8 @@ import AboutMe from "../../assets/images/about_me.JPG";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import { motion, Variants } from "framer-motion";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import "./About.css";
 
@@ -91,7 +91,9 @@ const About = () => {
           </div>
           <p>
             Hello my name is Ales Beresik and I am a developer. I have been
-            employed as manual tester, automation tester and QA enqineer.DOPLNIT
+            employed as manual tester, automation tester and right now as QA
+            enqineer. My passion is React so my focus is on learning and
+            building new projects in React
           </p>
           <a href="#contacts" className="btn btn-primary">
             Contact me
