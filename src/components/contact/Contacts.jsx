@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import emailjs from "emailjs-com";
 
 import { MdOutlineEmail } from "react-icons/md";
@@ -61,6 +61,7 @@ const Contacts = () => {
             <a
               href="https://api.whatsapp.com/send?phone=+421902424187"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>
@@ -72,6 +73,7 @@ const Contacts = () => {
             <a
               href="https://www.linkedin.com/in/aleš-bereš%C3%ADk-b5584b169/"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-import { motion, Variants } from "framer-motion";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 const textVariants = {
   offscreen: {

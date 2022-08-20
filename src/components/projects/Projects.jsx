@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
@@ -80,6 +80,7 @@ const Projects = () => {
             <img
               src={data[0].image}
               className="project_image"
+              alt={data[0].title}
               style={{
                 position: "absolute",
                 zIndex: 10,
@@ -92,6 +93,7 @@ const Projects = () => {
             <img
               src={data[1].image}
               className="project_image"
+              alt={data[1].title}
               style={{
                 position: "absolute",
                 zIndex: 10,
@@ -104,6 +106,7 @@ const Projects = () => {
             <img
               src={data[2].image}
               className="project_image"
+              alt={data[2].title}
               style={{
                 position: "absolute",
                 zIndex: 10,
@@ -116,6 +119,7 @@ const Projects = () => {
             <img
               src={data[3].image}
               className="project_image"
+              alt={data[3].title}
               style={{
                 position: "absolute",
                 zIndex: 10,
@@ -145,10 +149,20 @@ const Projects = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="project_item-cta">
-                  <a href={github} className="btn" target="_blank">
+                  <a
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Github
                   </a>
-                  <a href={demo} className="btn btn-primary" target="_blank">
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 </div>
