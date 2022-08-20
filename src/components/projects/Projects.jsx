@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import SmartHomeLogo from "../../assets/images/aleslogo.jpg";
 import Portfolio from "../../assets/images/Portfolio.PNG";
 import PhotoPortfolio from "../../assets/images/photo-portfolio.png";
+import Restaurant from "../../assets/images/restaurant.png";
 
 import "./Projects.css";
 
@@ -45,6 +46,13 @@ const data = [
     image: PhotoPortfolio,
     title: "Portfolio for a photograph",
     github: "https://github.com/alesberesik22/photo-portfolio",
+    demo: "https://github.com",
+  },
+  {
+    id: 4,
+    image: Restaurant,
+    title: "Restaurant web site",
+    github: "https://github.com/alesberesik22/",
     demo: "https://github.com",
   },
 ];
@@ -95,6 +103,18 @@ const Projects = () => {
           {visibleImg === 2 && (
             <img
               src={data[2].image}
+              className="project_image"
+              style={{
+                position: "absolute",
+                zIndex: 10,
+                top: 0,
+                left: 0,
+              }}
+            />
+          )}
+          {visibleImg === 3 && (
+            <img
+              src={data[3].image}
               className="project_image"
               style={{
                 position: "absolute",
