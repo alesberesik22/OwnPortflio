@@ -1,0 +1,64 @@
+.skills_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experiences {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+.skills_container {
+  width: 80%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.experience_skill_list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 5rem;
+}
+.skill_item {
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.skill_item > div {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.skills_flex > img {
+  width: 50%;
+  height: 50%;
+}
+.skills_flex > img:hover {
+  box-shadow: 0 0 25px #fef4f5;
+}
+.p_text {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--gray-color);
+  line-height: 1.5;
+  color: grey;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+@media screen and(max-width: 900px) {
+  .skills_container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .experience_skill_list {
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
