@@ -55,6 +55,7 @@ footer a:hover {
 }
 .footer_copyright {
   margin-bottom: 2rem;
+  color: grey;
 }
 /* ======================================= PHONES ======================================= */
 @media screen and (max-width: 600px) {

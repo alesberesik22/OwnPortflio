@@ -12,7 +12,7 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
+  --color-bg-variant: #313bac;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: black;
+  background: #e4e4e4;
   color: var(--color-white);
   line-height: 1.7rem;
   /* background-image: url(../src/assets/images/background2.jpg); */
@@ -69,7 +69,7 @@ section > h5 {
 }
 
 section > h2 {
-  color: var(--color-primary);
+  color: bla;
   margin-bottom: 3rem;
 }
 
@@ -77,7 +77,7 @@ section > h2 {
   color: var(--color-light);
 }
 a {
-  color: var(--color-primary);
+  color: var(--color-bg-variant);
   transition: var(--transition);
 }
 a:hover {
@@ -86,11 +86,11 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-bg-variant);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-bg-variant);
   transition: var(--transition);
 }
 .btn:hover {
@@ -99,8 +99,8 @@ a:hover {
   border-color: transparent;
 }
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background: var(--color-bg-variant);
+  color: white;
 }
 img {
   display: block;

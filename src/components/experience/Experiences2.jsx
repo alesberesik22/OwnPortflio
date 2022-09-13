@@ -12,7 +12,7 @@ function Experiences2() {
         <h5>What skills I have</h5>
         <h2>My Experiences</h2>
       </div>
-      <div className="experience skills_container">
+      <div className="skills_container">
         <motion.div className="experience_skill_list">
           {skills.map((skill, id) => (
             <motion.div
@@ -34,7 +34,7 @@ function Experiences2() {
         <motion.div className="skills_exp">
           {jobs.map((job, id) => (
             <motion.div key={job.year} className="skills_exp_item">
-              <div className="app__skills-exp-year">
+              <div className="skills_exp_year">
                 <p className="bold-text">{job.year}</p>
               </div>
               <motion.div

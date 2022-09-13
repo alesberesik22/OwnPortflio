@@ -18,7 +18,6 @@ const Header = () => {
     >
       <header>
         <div className="header_container">
-          {/* https://reactjsexample.com/portfolio-template-for-developers-build-in-react/ */}
           <div className="me">
             <img src={ME} alt={"me"} />
           </div>

@@ -92,8 +92,9 @@ const About = () => {
           <p>
             Hello my name is Ales Beresik and I am a developer. I have been
             employed as manual tester, automation tester and right now as QA
-            enqineer. My passion is React so my focus is on learning and
-            building new projects in React
+            enqineer. My passion is learning new things, new technologies and
+            most importantly React, which I love and want to get better in it
+            each day.
           </p>
           <a href="#contacts" className="btn btn-primary">
             Contact me

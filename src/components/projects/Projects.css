@@ -1,3 +1,6 @@
+#container {
+  height: 40rem;
+}
 .project_container {
   max-height: 85vh;
   overflow: scroll;
@@ -7,15 +10,17 @@
   float: right;
   position: relative;
   width: 30rem;
-  background: var(--color-bg-variant);
+  background: white;
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 40px #fef4f5; */
   transition: var(--transition);
   margin-bottom: 3rem;
 }
 .project_item:hover {
-  border-color: var(--color-primary-variant);
+  border-color: #313bac;
   background: transparent;
 }
 .project_item-image {
@@ -25,6 +30,7 @@
 
 .project_item h3 {
   margin: 1.2rem 0 2rem;
+  color: grey;
 }
 
 .project_item-cta {
@@ -34,10 +40,10 @@
 }
 .projects_text h5,
 h2 {
-  color: var(--color-light);
+  color: grey;
 }
 .projects_text h2 {
-  color: var(--color-primary);
+  color: var(--color-bg-variant);
   margin-bottom: 3rem;
 }
 .projects {
@@ -89,6 +95,14 @@ h2 {
   }
   .projects {
     margin-right: 7rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .project_item {
+    width: 16rem;
+  }
+  .project_images {
+    width: 45rem;
   }
 }
 
