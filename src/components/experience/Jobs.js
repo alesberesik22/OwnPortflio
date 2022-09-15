@@ -14,10 +14,10 @@ const jobs = [
     year: "2021-2022",
   },
   {
-    name: "QA Tester",
+    name: "Software Engineer",
     company: "Ness",
     description:
-      "As manual software test i work with Jenkins, Confluence, Jira and DBeaver to create new Test Cases, manually test software, communicate with developers",
+      "As manual software test i work with Jenkins, Conf  luence, Jira and DBeaver to create new Test Cases, manually test software, communicate with developers",
     year: "2022-2022",
   },
 ];

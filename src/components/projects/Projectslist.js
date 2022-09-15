@@ -12,6 +12,8 @@ const projectList = [
     demo: "https://github.com",
     video: "",
     tag: "React JS, Python, Testing, Firebase",
+    description:
+      "test test test test test test test test test test test test test test test test test test test test test test test test test ",
   },
   {
     id: 2,
@@ -21,6 +23,8 @@ const projectList = [
     demo: "https://github.com",
     video: "",
     tag: "React JS",
+    description:
+      "test test test test test test test test test test test test test test test test test test test test test test test test test ",
   },
   {
     id: 3,
@@ -30,6 +34,8 @@ const projectList = [
     demo: "https://github.com",
     video: "",
     tag: "React JS",
+    description:
+      "test test test test test test test test test test test test test test test test test test test test test test test test test ",
   },
   {
     id: 4,
@@ -39,6 +45,8 @@ const projectList = [
     demo: "https://github.com",
     video: "",
     tag: "React JS, Node JS, PostgreSQL",
+    description:
+      "test test test test test test test test test test test test test test test test test test test test test test test test test ",
   },
 ];
 export default projectList;

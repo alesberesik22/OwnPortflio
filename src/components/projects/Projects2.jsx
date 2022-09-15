@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { AiFillEye } from "react-icons/ai";
 import projectList from "./Projectslist";
 import "./Projects2.css";
 
 function Projects2() {
+  let navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [ProjectFilter, setProjectFilter] = useState([]);
@@ -12,6 +14,11 @@ function Projects2() {
   useEffect(() => {
     setProjectFilter(projectList);
   }, []);
+
+  const projectRedirect = (event) => {
+    navigate(`project/${event.target.id}`);
+    console.log(event.target.id);
+  };
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -54,8 +61,13 @@ function Projects2() {
         className="project_list"
       >
         {ProjectFilter.map((project, index) => (
-          <div className="project_item" key={index}>
-            <div className="project_item_img">
+          <div className="project_item">
+            <div
+              className="project_item_img"
+              onClick={projectRedirect}
+              key={index}
+              id={index}
+            >
               <img src={project.image} alt={project.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -65,8 +77,9 @@ function Projects2() {
                   staggerChildren: 0.5,
                 }}
                 className="project_item_hover"
+                id={index}
               >
-                <a href={project.demo} target="_blank" rel="norefer">
+                <a>
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
