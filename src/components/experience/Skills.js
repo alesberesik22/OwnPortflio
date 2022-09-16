@@ -18,6 +18,7 @@ import reactpng from "../../assets/skills/react.png";
 import robotframework from "../../assets/skills/robotframework.png";
 import selenium from "../../assets/skills/selenium.png";
 import typescript from "../../assets/skills/typescript.png";
+import cypress from "../../assets/skills/cypress.webp";
 const skills = [
   { img: reactpng, name: "React" },
   { img: css, name: "CSS" },
@@ -32,9 +33,9 @@ const skills = [
   { img: api, name: "API" },
   { img: selenium, name: "Selenium" },
   { img: postman, name: "Postman" },
-  { img: robotframework, name: "Robot framework" },
+  { img: cypress, name: "Cypress" },
   { img: docker, name: "Docker" },
-  { img: kubernetes, name: "Kubernetes" },
+  // { img: kubernetes, name: "Kubernetes" },
   { img: git, name: "Git" },
   { img: iot, name: "IoT" },
   { img: clanguage, name: "C" },

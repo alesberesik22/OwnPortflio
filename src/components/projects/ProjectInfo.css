@@ -67,3 +67,51 @@
 .tag_element {
   margin-left: 2rem;
 }
+.backspace {
+  position: absolute;
+  left: 2.5%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .project_content {
+    flex-direction: column;
+  }
+  .project_content_description {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projectInfo h4 {
+    font-size: 24px;
+  }
+  .backspace {
+    left: 1%;
+    font-size: 24px;
+    top: 90px;
+  }
+  .project_content {
+    margin-top: -120px;
+  }
+  .project_content_intro {
+    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -25px;
+  }
+
+  .project_content_intro img {
+    max-width: 20rem;
+    min-width: 20rem;
+    object-fit: contain;
+  }
+  .project_content_description {
+    margin-left: -25px;
+    margin-top: 0;
+    max-width: 20rem;
+  }
+}

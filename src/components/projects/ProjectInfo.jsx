@@ -1,17 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { MdKeyboardBackspace } from "react-icons/md";
 import "./ProjectInfo.css";
 import projectList from "./Projectslist";
 
 function ProjectInfo(props) {
   const [id, setId] = useState(useParams().id);
   const [project, setProject] = useState(projectList[id]);
+
   useEffect(() => {
     console.log(project);
   }, []);
+
   return (
-    <section id="projectInfo">
+    <motion.section
+      id="projectInfo"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+    >
       <div className="projectInfo">
+        <a href="/#projects" className={"backspace"}>
+          <MdKeyboardBackspace />
+        </a>
         <h4>{project.title}</h4>
       </div>
       <div className="project_content">
@@ -33,7 +46,7 @@ function ProjectInfo(props) {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -144,6 +144,6 @@ h2 {
 @media screen and (max-width: 450px) {
   .project_list {
     width: 100%;
-    margin: 1rem 1rem 1rem 2rem;
+    /* margin: 1rem 1rem 1rem 2rem; */
   }
 }

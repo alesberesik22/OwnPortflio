@@ -7,9 +7,16 @@ import Header from "../header/Header";
 import Nav from "../nav/Nav";
 import Projects from "../projects/Projects2";
 
+import { motion } from "framer-motion";
+
 function Home() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+    >
       <Header />
       <Nav />
       <About />
@@ -17,7 +24,7 @@ function Home() {
       <Projects />
       <Contacts />
       <Footer2 />
-    </div>
+    </motion.div>
   );
 }
 
