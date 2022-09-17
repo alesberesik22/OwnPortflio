@@ -44,6 +44,16 @@ function ProjectInfo(props) {
               </p>
             ))}
           </div>
+          <div className="project_item-cta">
+            <a
+              href={project.github}
+              className="btn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </div>
         </div>
       </div>
     </motion.section>
