@@ -11,7 +11,7 @@ const HeaderSocials = () => {
     <div className="header_socials">
       <a
         style={{ marginRight: "1rem" }}
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/ale%C5%A1-bere%C5%A1%C3%ADk-b5584b169/"
         target="_blank"
       >
         {" "}
@@ -19,21 +19,21 @@ const HeaderSocials = () => {
       </a>
       <a
         style={{ marginRight: "1rem" }}
-        href="https://github.com"
+        href="https://github.com/alesberesik22"
         target="_blank"
       >
         <FaGithub />
       </a>
       <a
         style={{ marginRight: "1rem" }}
-        href="https://facebook.com"
+        href="https://sk-sk.facebook.com/AlesBeresik6"
         target="_blank"
       >
         <FaFacebook />
       </a>
       <a
         style={{ marginRight: "1rem" }}
-        href="https://instagram.com"
+        href="https://www.instagram.com/alesberesik/"
         target="_blank"
       >
         <BsInstagram />
