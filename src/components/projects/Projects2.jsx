@@ -16,8 +16,8 @@ function Projects2() {
   }, []);
 
   const projectRedirect = (event) => {
-    navigate(`project/${event.target.id}`);
     console.log(event.target.id);
+    navigate(`project/${event.target.id}`);
   };
 
   const handleWorkFilter = (item) => {
@@ -43,17 +43,19 @@ function Projects2() {
         <h2>I have made</h2>
       </div>
       <div className="project_filter">
-        {["React JS", "Testing", "DevOps", "All"].map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleWorkFilter(item)}
-            className={`project_item_filter ${
-              activeFilter === item ? "project_item_active" : ""
-            }`}
-          >
-            {item}
-          </div>
-        ))}
+        {["React JS", "Cypress", "Docker", "Node JS", "All"].map(
+          (item, index) => (
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={`project_item_filter ${
+                activeFilter === item ? "project_item_active" : ""
+              }`}
+            >
+              {item}
+            </div>
+          )
+        )}
       </div>
       <motion.div
         animate={animateCard}
@@ -65,9 +67,11 @@ function Projects2() {
             <div
               className="project_item_img"
               onClick={projectRedirect}
-              key={index}
-              id={index}
+              key={project.id - 1}
+              id={project.id - 1}
             >
+              {console.log("test")}
+              {console.log(project)}
               <img src={project.image} alt={project.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -77,16 +81,17 @@ function Projects2() {
                   staggerChildren: 0.5,
                 }}
                 className="project_item_hover"
-                id={index}
+                id={project.id - 1}
               >
-                <a>
+                <a id={project.id} onClick={projectRedirect}>
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className="project_item_view"
+                    id={project.id - 1}
                   >
-                    <AiFillEye />
+                    <AiFillEye id={project.id - 1} />
                   </motion.div>
                 </a>
               </motion.div>

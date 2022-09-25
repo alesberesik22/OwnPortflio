@@ -9,10 +9,6 @@ function ProjectInfo(props) {
   const [id, setId] = useState(useParams().id);
   const [project, setProject] = useState(projectList[id]);
 
-  useEffect(() => {
-    console.log(project);
-  }, []);
-
   return (
     <motion.section
       id="projectInfo"
@@ -29,7 +25,11 @@ function ProjectInfo(props) {
       </div>
       <div className="project_content">
         <div className="project_content_intro">
-          <img src={project.image} alt={project.title} />
+          {project.video ? (
+            <video src={project.video} autoPlay loop muted />
+          ) : (
+            <img src={project.image} alt={project.title} />
+          )}
         </div>
         <div className="project_content_description">
           <div className="description">
