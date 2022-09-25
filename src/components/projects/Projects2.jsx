@@ -62,7 +62,7 @@ function Projects2() {
         className="project_list"
       >
         {ProjectFilter.map((project, index) => (
-          <div className="project_item">
+          <div className="project_item" key={project.id - 1}>
             <div
               className="project_item_img"
               onClick={projectRedirect}
