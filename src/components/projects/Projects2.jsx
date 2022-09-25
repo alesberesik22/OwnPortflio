@@ -16,7 +16,6 @@ function Projects2() {
   }, []);
 
   const projectRedirect = (event) => {
-    console.log(event.target.id);
     navigate(`project/${event.target.id}`);
   };
 
@@ -70,8 +69,6 @@ function Projects2() {
               key={project.id - 1}
               id={project.id - 1}
             >
-              {console.log("test")}
-              {console.log(project)}
               <img src={project.image} alt={project.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
