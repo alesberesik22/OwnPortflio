@@ -42,7 +42,7 @@ function Projects2() {
         <h2>I have made</h2>
       </div>
       <div className="project_filter">
-        {["React JS", "Cypress", "Docker", "Node JS", "All"].map(
+        {["React JS", "Cypress", "Docker", "Jenkins", "Node JS", "All"].map(
           (item, index) => (
             <div
               key={index}

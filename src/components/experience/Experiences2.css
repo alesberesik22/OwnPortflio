@@ -145,4 +145,8 @@ h2 {
   .experience_skill_list {
     margin: 0;
   }
+  .skills_exp {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
 }

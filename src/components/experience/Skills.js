@@ -19,6 +19,7 @@ import robotframework from "../../assets/skills/robotframework.png";
 import selenium from "../../assets/skills/selenium.png";
 import typescript from "../../assets/skills/typescript.png";
 import cypress from "../../assets/skills/cypress.webp";
+import jenkins from "../../assets/skills/jenkins.png";
 const skills = [
   { img: reactpng, name: "React" },
   { img: css, name: "CSS" },
@@ -35,6 +36,7 @@ const skills = [
   { img: postman, name: "Postman" },
   { img: cypress, name: "Cypress" },
   { img: docker, name: "Docker" },
+  { img: jenkins, name: "Jenkins" },
   // { img: kubernetes, name: "Kubernetes" },
   { img: git, name: "Git" },
   { img: iot, name: "IoT" },

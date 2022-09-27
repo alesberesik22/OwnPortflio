@@ -73,7 +73,7 @@ const projectList = [
     github: "https://github.com/alesberesik22/cypress_pom",
     demo: "https://github.com/",
     video: "",
-    tag: "Cypress, TypeScript, Docker, GithubActions",
+    tag: "Cypress, TypeScript, Docker, Jenkins, GithubActions",
     description:
       "Application that tests website from login, error message and entering shop after successfull login. Tests are build using GithubActions and results are sent to Cypress Dashboard. Docker builds image of actual version of tests and sends image versions to Docker Hub.",
   },
