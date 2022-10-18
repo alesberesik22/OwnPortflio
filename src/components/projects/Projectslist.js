@@ -4,11 +4,13 @@ import PhotoPortfolio from "../../assets/images/photo-portfolio.png";
 import Restaurant from "../../assets/images/restaurant.png";
 import attorney from "../../assets/images/attorney.png";
 import cypress from "../../assets/images/cypress.png";
+import crypto_image from "../../assets/images/Cryptoapp.png";
 import parking_lot from "../../assets/images/parking-lot.png";
 import photo_portfolio_video from "../../assets/videos/photo-portfolio.mp4";
 import restaurant_video from "../../assets/videos/restaurant.mp4";
 import smarthome_video from "../../assets/videos/smarthome.mp4";
 import testimonial_video from "../../assets/videos/testimonial.mp4";
+import crypto_video from "../../assets/videos/crypto_app.mp4";
 
 const projectList = [
   {
@@ -87,6 +89,17 @@ const projectList = [
     tag: "React JS, Node JS, Docker, GithubActions",
     description:
       "Parking lot with all informations about free parking spaces detected by camera. Camera is connected to Raspberry PI with machine lerning camera recognises free parking spaces. Work in progress",
+  },
+  {
+    id: 8,
+    image: crypto_image,
+    title: "Crypto app",
+    github: "https://github.com/alesberesik22/crypto_page",
+    demo: "https://github.com/alesberesik22/crypto_page",
+    video: crypto_video,
+    tag: "React JS, Redux, Ant Design, Chart JS",
+    description:
+      "Crypto application with all informations about Cryptos. User can see price graph, read topics about selected crypto.",
   },
 ];
 export default projectList;
