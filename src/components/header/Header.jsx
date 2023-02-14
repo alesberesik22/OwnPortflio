@@ -53,7 +53,7 @@ const Header = () => {
               <h3 className="header_bullet_point">
                 💼
                 <span style={{ fontSize: "14px", marginLeft: "1.5rem" }}>
-                  Engineer at Ness KE
+                  React Developer | Automation engineer
                 </span>
               </h3>
               <h3 className="header_bullet_point">

@@ -90,6 +90,7 @@ h2 {
   align-items: flex-start;
   margin-bottom: 1rem;
   cursor: pointer;
+  width: 65%;
 }
 .skill_exp_work h4 {
   font-weight: 500;
@@ -100,7 +101,8 @@ h2 {
   margin-top: 5px;
 }
 .skills_exp_year {
-  margin-right: 3rem;
+  /*margin-right: 3rem;*/
+  width: 35%;
 }
 .skills_exp_year p {
   font-weight: 800;
