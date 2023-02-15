@@ -91,8 +91,9 @@ const About = () => {
           </div>
           <p>
             Hello my name is Ales Beresik and I am a developer. I have been
-            employed as manual tester, automation tester and right now as QA
-            enqineer. My passion is learning new things, new technologies and
+            employed as manual tester, automation tester software engineer
+            and right now I work as React Developer and Automation engineer.
+            My passion is learning new things, new technologies and
             most importantly React, which I love and want to get better in it
             each day.
           </p>
