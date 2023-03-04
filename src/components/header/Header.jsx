@@ -15,6 +15,7 @@ const Header = () => {
       strength={500}
       blur={{ min: 0, max: 5 }}
       bgImageStyle={{ filter: "blur(0.3rem)" }}
+      style={{ height: "102vh", width: "102vw" }}
     >
       <header>
         <div className="header_container">

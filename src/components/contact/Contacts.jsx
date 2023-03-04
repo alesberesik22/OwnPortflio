@@ -8,6 +8,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 
 import "./Contacts.css";
+import StarsCanvas from "../3DComponents/Stars";
 
 const Contacts = () => {
   const form = useRef();

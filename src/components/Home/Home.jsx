@@ -8,6 +8,7 @@ import Nav from "../nav/Nav";
 import Projects from "../projects/Projects2";
 
 import { motion } from "framer-motion";
+import StarsCanvas from "../3DComponents/Stars";
 
 function Home() {
   return (
@@ -16,13 +17,19 @@ function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
+      style={{ overflow: "hidden" }}
     >
       <Header />
       <Nav />
-      <About />
+      <div style={{ width: "100%", height: "100%", position: "relative" }}>
+        <About />
+        <StarsCanvas />
+      </div>
       <Experiences />
       <Projects />
+
       <Contacts />
+
       <Footer2 />
     </motion.div>
   );

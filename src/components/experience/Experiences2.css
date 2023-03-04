@@ -80,8 +80,23 @@ h2 {
   align-items: flex-start;
   margin: 1rem 0;
 }
+.vertical-timeline-element {
+  transition: var(--transition);
+  margin: 0;
+}
+.vertical-timeline-element:hover {
+  transform: scale(1.05); /* adjust as needed */
+}
 .skills_exp {
   flex: 1;
+}
+.vertical-timeline-element-date {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.vertical-timeline {
+  margin: 0;
+  padding: 0;
 }
 .skill_exp_work {
   display: flex;
@@ -90,7 +105,13 @@ h2 {
   align-items: flex-start;
   margin-bottom: 1rem;
   cursor: pointer;
-  width: 65%;
+  width: 100%;
+  transition: var(--transition);
+}
+.vertical-timeline-element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .skill_exp_work h4 {
   font-weight: 500;
@@ -119,7 +140,25 @@ h2 {
   line-height: 1.5 !important;
   opacity: 1 !important;
 }
-
+@media screen and (min-width: 1170px) and (max-width: 1600px) {
+  .experience_skill_list {
+    margin-right: 2rem;
+  }
+  .skills_container {
+    width: 90%;
+    padding: 0 0 0 1rem;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .skills_container {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 850px) {
   .skills_container {
     width: 100%;
@@ -149,6 +188,8 @@ h2 {
   }
   .skills_exp {
     margin-top: 1rem;
-    margin-left: 1rem;
+  }
+  .vertical-timeline-element-content {
+    width: 82%;
   }
 }
