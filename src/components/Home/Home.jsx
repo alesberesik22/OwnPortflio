@@ -27,7 +27,6 @@ function Home() {
       </div>
       <Experiences />
       <Projects />
-
       <Contacts />
 
       <Footer2 />
